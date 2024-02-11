@@ -4,7 +4,6 @@ import { WebhookEvent } from '@clerk/nextjs/server';
 import { createUser, deleteUser, updateUser } from '@/lib/actions/user.actions';
 import { clerkClient } from '@clerk/nextjs';
 import { NextResponse } from 'next/server';
-// import { CreateUserParams } from '@/types';
 
 export async function POST(req: Request) {
 
@@ -107,9 +106,5 @@ export async function POST(req: Request) {
 
 	}
 
-  // console.log(`Webhook with and ID of ${id} and type of ${eventType}`)
-  // console.log('Webhook body:', body)
- 
   return new Response('', { status: 200 })
-}
- 
+};
