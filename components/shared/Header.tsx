@@ -20,12 +20,10 @@ const Header = () => {
 					</Link>
 				</div>
 				<MainNav />
-				<div className="ps-2">
+				<div className="flex w-32 justify-end gap-3">
 					<SignedIn>
-						<div className="flex items-center gap-2">
-							<UserButton afterSignOutUrl="/" />
-							<MobileNav />
-						</div>
+						<UserButton afterSignOutUrl="/" />
+						<MobileNav />
 					</SignedIn>
 					<SignedOut>
 						<Button asChild className="rounded-full" size="lg">

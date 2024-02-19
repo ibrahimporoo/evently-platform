@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-interface ICategory extends mongoose.Document {
+export interface ICategory extends mongoose.Document {
 	_id: string;
 	name: string;
 }

@@ -8,10 +8,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-		<main className="flex flex-col min-h-screen mx-auto">
+		<div className="flex flex-col min-h-screen">
 			<Header />
-			{ children }
+			<main className="flex-1">
+				{ children }
+			</main>
 			<Footer />
-		</main>
+		</div>
   );
 }

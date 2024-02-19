@@ -1,14 +1,27 @@
 export const NavLinks = [
 	{
+		label: 'Home',
 		route: '/',
-		label: 'Home'
 	},
 	{
-		route: '/event/create',
-		label: 'Create Event'
+		label: 'Create Event',
+		route: '/events/create',
 	},
 	{
+		label: 'My Profile',
 		route: '/profile',
-		label: 'Profile'
 	}
 ];
+
+export const eventDefaultValues = {
+  title: '',
+  description: '',
+  location: '',
+  imageUrl: '',
+  startDateTime: new Date(),
+  endDateTime: new Date(),
+  categoryId: '',
+  price: '',
+  isFree: false,
+  url: '',
+}
